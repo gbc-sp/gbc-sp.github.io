@@ -48,10 +48,6 @@ body {
     border-color: var(--color-smarter-learning);
     color: var(--color-smarter-learning);
 }
-.button:active {
-    background-color: var(--color-smarter-learning);
-    color: white;
-}
 
 .analysis li {
     background-color: var(--color-bg);
