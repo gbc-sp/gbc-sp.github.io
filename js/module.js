@@ -5,10 +5,6 @@ if (tile) {
 	  });
 }
 
-$("#gotIt").click(function() {
-	$("#infoAlert").hide();
-});
-
 
 var tipsContent = [
 	"<ul class='bulleted'><li>Have I completed, studied and understood my PLP?</li><li>Can I recognize when there is an important new learning opportunity?</li><li>Do I have strategies for engaging people with different learning profiles?</li><li>Can I recognize, understand and appreciate how other’s different learning profiles can help me?</li><li>Have I constructed a model or system for how I can be a smarter learner?</li></ul>",
