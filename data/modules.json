@@ -1,0 +1,74 @@
+{
+  "modules": [
+    {
+      "comps":4,
+      "name":"Self Work",
+      "complete":true,
+      "active":false,
+      "color":"#42C2CF",
+      "tips": [
+        "Have I completed, studied and understood my PLP? Can I recognize when there is an important new learning opportunity? Do I have strategies for engaging people with different learning profiles? Can I recognize, understand and appreciate how other’s different learning profiles can help me? Have I constructed a model or system for how I can be a smarter learner?",
+        "Have you completed, studied and understood my PLP? Can I recognize when there is an important new learning opportunity? Do I have strategies for engaging people with different learning profiles? Can I recognize, understand and appreciate how other’s different learning profiles can help me? Have I constructed a model or system for how I can be a smarter learner?",
+        "Have we completed, studied and understood my PLP? Can I recognize when there is an important new learning opportunity? Do I have strategies for engaging people with different learning profiles? Can I recognize, understand and appreciate how other’s different learning profiles can help me? Have I constructed a model or system for how I can be a smarter learner?",
+        "Are you aware of the signs that you are thinking with a fixed mindset? When you are in a fixed mindset, what elements do you need to work to overcome? Can you envision yourself succeeding in a task Are you able to identifying risk and taking steps to mitigate it? Do you know how to ask for help when you hit a roadblock? Do you know how to leverage your network to help you succeed in a task/situation?"
+      ]
+    },
+    {
+      "comps":0,
+      "name":"Teamwork",
+      "complete":false,
+      "active":false,
+      "color":"#009147",
+      "tips": [
+        "This is a tip. As is this. Amazing",
+        "This could be a tip. As this could be. Amazing",
+        "This is not a tip. This isn't either. Amazing"
+      ]
+    },
+    {
+      "comps":4,
+      "name":"Communication & Networking",
+      "complete":true,
+      "active":true,
+      "color":"#FCC189",
+      "tips":"Here are some tips.. great."
+    },
+    {
+      "comps":0,
+      "name":"Design & Innovation",
+      "complete":false,
+      "active":false,
+      "color":"#C2DCAA",
+      "tips": [
+        "Have I completed, studied and understood my PLP? Can I recognize when there is an important new learning opportunity? Do I have strategies for engaging people with different learning profiles? Can I recognize, understand and appreciate how other’s different learning profiles can help me? Have I constructed a model or system for how I can be a smarter learner?",
+        "Have you completed, studied and understood my PLP? Can I recognize when there is an important new learning opportunity? Do I have strategies for engaging people with different learning profiles? Can I recognize, understand and appreciate how other’s different learning profiles can help me? Have I constructed a model or system for how I can be a smarter learner?",
+        "Have we completed, studied and understood my PLP? Can I recognize when there is an important new learning opportunity? Do I have strategies for engaging people with different learning profiles? Can I recognize, understand and appreciate how other’s different learning profiles can help me? Have I constructed a model or system for how I can be a smarter learner?",
+        "Are you aware of the signs that you are thinking with a fixed mindset? When you are in a fixed mindset, what elements do you need to work to overcome? Can you envision yourself succeeding in a task Are you able to identifying risk and taking steps to mitigate it? Do you know how to ask for help when you hit a roadblock? Do you know how to leverage your network to help you succeed in a task/situation?"
+      ]
+    },
+    {
+      "comps":0,
+      "name":"Information Management",
+      "complete":false,
+      "active":false,
+      "color":"#F2DE32",
+      "tips":"Here are some tips.. great."
+    },
+    {
+      "comps":0,
+      "name":"Strategic Thinking",
+      "complete":false,
+      "active":false,
+      "color":"#004568",
+      "tips":"Here are some tips.. great."
+    },
+    {
+      "comps":3,
+      "name":"Smarter Learning",
+      "complete":false,
+      "active":true,
+      "color":"#EC4824",
+      "tips":"Here are some tips.. great."
+    }
+  ]
+}

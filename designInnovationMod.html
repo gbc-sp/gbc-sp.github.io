@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Skillpod | Module</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
+  <link rel="stylesheet" href="css/skillpod-layouts.css">
+  <!-- <link rel="stylesheet" href="css/this-page-name.css"> -->
+</head>
+
+<body>
+
+  <!-- No touching! -->
+  <nav class="toolbar">
+    <ul class="tools">
+      <li class="tool"><a href="dashboard.html">skills</a><div class="tool-selected"></div></li>
+      <li class="tool"><a href="portfolio.html">portfolio</a><div class="tool-selected"></div></li>
+      <li></li>
+      <li class="tool current"><a href="module-start.html">continue</a><div class="tool-selected"></div></li>
+    </ul>
+  </nav>
+    <!-- No touching! -->
+
+  <main class="layout">
+      <div class="tile info">
+          <div class="two-column-grid">
+            <img src="img/information.png">
+            <div>
+              <p>Welcome to the Design Innovation homepage! Every skill is broken into four sections, each with unique learning opportunities that relate to the skill. From here you can start any skill section, see your skill progress, and review completed chapters. Each skill helps push you toward your goal!</p>
+              <button class="buttonAlt center" type="button">Got it!</button>
+            </div>
+          </div>
+        </div>
+    <!-- Here is the layout, complete the content here -->
+    <div class="tile module-home">
+        <div class="bio-grid">
+            <img src="img/designInnovation.svg">
+            <div>
+              <h3 class="txt-impact small-margin-bottom">Module Home</h3>
+              <h1>Design Innovation</h1>
+            </div>
+        </div>
+      <p>Learning is the change in one's behaviour or knowledge which comes about as a result of experience.</p>
+      <p class="hidden">We all learn in different ways, and sometimes individuals have different methods of learning depending on the job they need to do.<span id="dotdotdot">...</span></p>
+      <p class="hidden">The Skillpod Design Innovation module is based on understanding yourself as a learner so that you can start to learn faster and design learning in a way that best suits your personal needs. This begins with a self-assessment, the Personal Learning Preferences (PLP) which combines variables such as you Multiple intelligences (MI) strengths with your personal interests and career interests. It helps you learn from past successes and create a process that works best for you.</p>
+      <button class="buttonAlt" type="button" id="read-more">Read more</button>
+    </div>
+    <div class="tile blank no-vertical-padding">
+        <h1>Skill Sections</h1>
+        <h2>Select which section you want to do.</h2>
+    </div>
+    <div class="scrollable-row">
+
+        <div data-id=0 class="tile comp disabled two-column-grid">
+          <div class="module-done"><img class="checkmark" src="img/checkmark.svg"></div>
+          <div>
+            <h1>Knowing yourself as a learner</h1>
+            <button type="button" class="buttonAlt">View tips</button>
+          </div>
+        </div>
+        <div data-id=1 class="tile comp disabled two-column-grid">
+          <div class="module-done"><img class="checkmark" src="img/checkmark.svg"></div>
+          <div>
+            <h1>Cultivating a growth mindset</h1>
+            <button type="button" class="buttonAlt">View tips</button>
+          </div>
+        </div>
+        <div data-id=2 class="tile comp disabled two-column-grid">
+          <div class="module-done"><img class="checkmark" src="img/checkmark.svg"></div>
+          <div>
+            <h1>Achieving your goals</h1>
+            <button type="button" class="buttonAlt">View tips</button>
+          </div>
+        </div>
+        <div data-id=2 class="tile comp disabled two-column-grid">
+          <div class="module-done"><img class="checkmark" src="img/checkmark.svg"></div>
+          <div>
+            <h1>Harnessing the power of failure</h1>
+            <button type="button" class="buttonAlt">View tips</button>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+<script src="js/module.js"></script>
+<script src="js/auth.js"></script></body>
+</html>

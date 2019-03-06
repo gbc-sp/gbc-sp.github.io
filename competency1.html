@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Skillpod | Competency</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
+  <link rel="stylesheet" href="css/skillpod-layouts.css">
+  <link rel="stylesheet" href="css/comp.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- No touching! -->
+  <nav class="toolbar competency">
+      <ul class="tools">
+        <li class="tool"><a href="dashboardv2.html">skills</a><div class="tool-selected"></div></li>
+        <li class="tool"><a href="portfolio.html">portfolio</a><div class="tool-selected"></div></li>
+        <li></li>
+        <li class="tool current"><a href="module-start.html">continue</a><div class="tool-selected"></div></li>
+      </ul>
+      <div class="container">
+          <div class="progress-bar" id="prog"></div>
+        </div>
+    </nav>
+    <!-- No touching! -->
+
+    <div id="tipsPop" class="pop-up hidden">
+      <h2 id="closeTips">close</h2>
+      <div class="tile">
+          <h1>Tips</h1>
+        <h2>Knowing yourself as a learner.</h2>
+        <p>- Have I completed, studied and understood my PLP?
+          <br><br>- Can I recognize when there is an important new learning opportunity?
+          <br><br>- Do I have strategies for engaging people with different learning profiles?
+          <br><br>- Can I recognize, understand and appreciate how other’s different learning profilescan help me?
+          <br><br>- Have I constructed a model or system for how I can be a smarter learner?</p>
+      </div>
+      <div class="tile blank"><h3>You can see these tips at any point in skills!</h3></div>
+    </div>
+  <main class="layout competency">
+    <div class="header white-txt invert smarterLearning">
+      <img src="img/smarterLearning.svg">
+      <h1>Smarter Learning</h1>
+    </div>
+    <div class="two-column-grid inner-content">
+      <div class="sidebar">
+        <h1>Switch Sections</h1>
+        <h2>Want to go back a section to review?</h2>
+          <div class="vertical-stack fixed tight-padding">
+              <div class="tile comp disabled tight-padding">
+                <div>
+                  <h1>Knowing yourself as a learner</h1>
+                </div>
+              </div>
+              <div class="tile comp disabled tight-padding">
+                <div>
+                  <h1>Cultivating a growth mindset</h1>
+                </div>
+              </div>
+              <div class="tile comp disabled tight-padding">
+                <div>
+                  <h1>Achieving your goals</h1>
+                </div>
+              </div>
+              <div class="tile comp current smarterLearning white-txt tight-padding">
+                <div>
+                  <h1>Harnessing the power of failure</h1>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="inner-layout">
+        <div class="tile blank no-vertical-padding">
+          <div class="tabs">
+            <div id="scenarioTab" class="tab selected">Scenario</div>
+            <div id="analysisTab" class="tab disabled">Analysis</div>
+            <div id="reflectTab" class="tab disabled">Reflect</div>
+          </div>
+
+        </div>
+        <div class="tile shrink-vertical comp-window">
+            <div id="tipsPopBtn" class="fab white-txt center invert">
+                <img src="img/tips_icon.svg">
+            </div>
+        <div id="scenario">
+            <h1>Scenarios</h1>
+            <p>A Scenario depicts situations of characters, where you can learn from their actions, specific to the Smarter Learning skill.</p>          </div>
+          <div class="steps">
+            <div class="step active"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+          </div>
+        </div>
+        <div class="tile blank center very-tight-padding">
+            <div id="nextBtn" class="button button-sticky-big">Next</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+  <div id="coach" class="coach-pop">
+      <div class="the-coach invert">
+          <img src="img/coach_icon.svg">
+        </div>
+      <div class="coach tile">
+        <div class="two-column-grid">
+          <h2>The Coach</h2>
+          <div id="closeCoach"><h2>close</h2></div>
+        </div>
+        <p id="coachContent"></p>
+      </div>
+    </div>
+  <script src="js/comp.js"></script>
+<script src="js/auth.js"></script></body>
+</html>

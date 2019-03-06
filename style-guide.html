@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <title>Skillpod | Master Style Guide</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
+  <link rel="stylesheet" href="css/skillpod-layouts.css">
+  <link rel="stylesheet" href="css/style-guide.css">
+</head>
+
+<body class="no-toolbar">
+
+
+  <main class="layout">
+    <h1>Skillpod Master Style Guide</h1>
+
+    <ol class="counted row-space">
+      <li>Layouts
+        <ol>
+          <li><a href="#the-grid">The Grid</a></li>
+          <li><a href="#tiles">Tiles</a></li>
+          <li><a href="#toolbar">Toolbar</a></li>
+        </ol>
+      </li>
+      <li>Text Elements
+        <ol>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#headings">Headings</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#text-helpers">Text Helpers</a></li>
+        </ol>
+      </li>
+      <li>Components
+        <ol>
+          <li><a href="#form-elements">Form Elements</a></li>
+          <li><a href="#icons">Icons</a></li>
+        </ol>
+      </li>
+    </ol>
+
+
+    <div class="tile" id="the-grid">
+      <header>
+        <h3 class="txt-impact">Layout</h3>
+        <h1>The Grid</h1>
+      </header>
+
+      <article class="row-space-big">
+      </article>
+    </div>
+
+    <div class="tile" id="tiles">
+      <header>
+        <h3 class="txt-impact">Layout</h3>
+        <h1>Tiles</h1>
+      </header>
+
+      <article class="row-space-big">
+      </article>
+    </div>
+
+    <div class="tile" id="toolbar">
+      <header>
+        <h3 class="txt-impact">Layout</h3>
+        <h1>The Toolbar</h1>
+      </header>
+
+      <article class="row-space-big">
+      </article>
+    </div>
+
+    <div class="tile" id="content">
+      <header>
+        <h3 class="txt-impact">Text Elements</h3>
+        <h1>Default Content & Paragraphs</h1>
+      </header>
+
+      <article class="row-space-big">
+      </article>
+    </div>
+
+
+    <div class="tile" id="headings">
+      <header>
+        <h3 class="txt-impact">Text Elements</h3>
+        <h1>Headings</h1>
+      </header>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Headings & Subheadings</h2>
+        <p>Use the following markup:</p>
+        <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+        <p>To create these resulting elements:</p>
+        <output>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </output>
+      </article>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Combination Headings</h2>
+        <p>When an <code>h1</code> or <code>h2</code> immediately follows an <code>h3</code>, their top margin colapses to bring the elements closer together vertically.</p>
+        <pre>&lt;h3&gt;Subheading&lt;/h3&gt;
+&lt;h1&gt;Primary Heading&lt;/h1&gt;</pre>
+        <p>Creates the resulting output:</p>
+        <output>
+          <h3>Subheading</h3>
+          <h1>Primary Heading</h1>
+        </output>
+      </article>
+    </div>
+
+
+    <div class="tile" id="lists">
+      <header>
+        <h3 class="txt-impact">Text Elements</h3>
+        <h1>Lists</h1>
+      </header>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Ordered & Unordered</h2>
+        Lists created in the following ways:
+        <pre>&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+  &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;</pre>
+        <pre>&lt;ul&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        <p>Result in the following lists:</p>
+        <output><ol>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ol></output>
+        <output><ul>
+          <li>Item</li>
+          <li>Item</li>
+          <li>Item</li>
+        </ul></output>
+      </article>
+      <article class="row-space-big">
+        <h2 class="line-under">Ordered & Unordered</h2>
+        <p>Style can be added back using <code>.counted</code> and <code>.bulleted</code> for numbers and bullet points respectively.</p>
+        <pre>&lt;ol class=&quot;counted&quot;&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+  &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;</pre>
+        <pre>&lt;ul class=&quot;bulleted&quot;&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        <p>With the following results</p>
+        <output>
+          <ol class="counted">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+          </ol>
+        </output>
+        <output>
+          <ul class="bulleted">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </output>
+      </article>
+      <article class="row-space-big">
+        <h2 class="line-under">Inline lists</h2>
+        <p>Lists can be set inline by applying <code>.list-inline</code> to the list</p>
+        <pre>&lt;ul class=&quot;bulleted&quot;&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        <p>This results in the following:</p>
+        <output>
+          <ul class="list-inline">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </output>
+      </article>
+    </div>
+
+
+    <div class="tile" id="text-helpers">
+      <header>
+        <h3 class="txt-impact">Text Elements</h3>
+        <h1>Misc Helper Classes</h1>
+      </header>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Text Impact</h2>
+        <p>A class of <code>.txt-impact</code>, as shown here:</p>
+        <pre>&lt;h3 class=&quot;txt-impact&quot;&gt;Subheading&lt;/h3&gt;
+&lt;h2&gt;Secondary Heading&lt;/h2&gt;</pre>
+        <p>Creates the resulting output:</p>
+        <output>
+          <h3 class="txt-impact">Subheading</h3>
+          <h2>Secondary Heading</h2>
+        </output>
+      </article>
+    </div>
+
+    <div class="tile" id="form-elements">
+      <header>
+        <h3 class="txt-impact">Components</h3>
+        <h1>Form Elements</h1>
+      </header>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Text Input</h2>
+        <p>Use the following markup:</p>
+        <pre>&lt;input type=&quot;text&quot; placeholder=&quot;Full Name&quot;&gt;</pre>
+        <p>To create this resulting element:</p>
+        <input type="text" placeholder="Full Name">
+      </article>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Text Area</h2>
+        <p>Use the following markup:</p>
+        <pre>&lt;textarea type=&quot;text&quot; placeholder=&quot;Type Here&quot;&gt;</pre>
+        <p>To create this resulting element:</p>
+        <textarea type="text" placeholder="Type Here"></textarea>
+      </article>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Select (Dropdown)</h2>
+        <p>Use the following markup:</p>
+        <pre>&lt;select&gt;
+  &lt;option disabled selected value&gt;Select an option&lt;/option&gt;
+  &lt;option value=&quot;one&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;two&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;three&quot;&gt;Three&lt;/option&gt;
+  &lt;option value=&quot;four&quot;&gt;Four&lt;/option&gt;
+&lt;/select&gt;</pre>
+        <p>To create this resulting element:</p>
+        <select>
+          <option disabled selected value>Select an option</option>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+          <option value="three">Three</option>
+          <option value="four">Four</option>
+        </select>
+      </article>
+
+      <article class="row-space-big">
+        <h2 class="line-under">Error</h2>
+        <p>Applying the <code>.error</code> class:</p>
+        <pre>&lt;input type=&quot;text&quot; class=&quot;error&quot; placeholder=&quot;Full Name&quot;&gt;</pre>
+        <p>Creates this style variant:</p>
+        <input type="text" class="error" placeholder="Full Name">
+      </article>
+
+
+      <article class="row-space-big">
+        <h2 class="line-under">Buttons</h2>
+        <p>Use the following markup:</p>
+        <pre>&lt;button type=&quot;button&quot;&gt;Press Me&lt;/button&gt;</pre>
+        <p>To create this resulting element:</p>
+        <button type="button">Press Me</button>
+
+        <p>Use the following markup:</p>
+        <pre>&lt;button class="buttonAlt" type=&quot;button&quot;&gt;Press Me&lt;/button&gt;</pre>
+        <p>To create this resulting element:</p>
+        <button class="buttonAlt" type="button">Press Me</button>
+
+      </article>
+
+      <article class="row-space-big">
+          <h2 class="line-under">Anchor Buttons</h2>
+          <p>When using a button to link to another page, the <code>.button</code> class is available to be used as follows</p>
+          <pre>&lt;a href=&quot;index.html&quot; class=&quot;button&quot;&gt;Go home&lt;/a&gt;</pre>
+          <p>To create this resulting element:</p>
+          <a href="index.html" class="button">Go home</a>
+        </article>
+    </div>
+
+    <div class="tile" id="icons">
+      <header>
+        <h3 class="txt-impact">Components</h3>
+        <h1>Icons</h1>
+      </header>
+
+      <article class="row-space-big">
+      </article>
+    </div>
+
+
+
+  </main>
+
+<script src="js/auth.js"></script></body>
+</html>

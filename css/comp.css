@@ -1,0 +1,127 @@
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    justify-items: center;
+}
+.tab {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.tab:hover {
+    text-decoration: underline;
+}
+.tab.selected {
+    color: var(--color-smarter-learning);
+    font-weight: 800;
+}
+.tab.disabled {
+    color: var(--color-medium);
+}
+.tab.disabled:hover {
+    text-decoration: none;
+}
+.tab.complete {
+    color: var(--color-smarter-learning);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.competency .fab {
+    display: grid;
+    position: absolute;
+    top:-1em;
+    right: -1em;
+}
+.comp-window {
+    position: relative;
+}
+
+.button {
+    background-color: var(--color-smarter-learning);
+    border-color: var(--color-smarter-learning);
+}
+.button:hover {
+    border-color: var(--color-smarter-learning);
+    color: var(--color-smarter-learning);
+}
+
+.analysis li {
+    background-color: var(--color-bg);
+    padding: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+.analysis li.selected.correct {
+    background-color: green;
+    color: white;
+}
+.analysis li.selected.wrong {
+    background-color: red;
+    color: white;
+}
+.analysis li span {
+    pointer-events: none;
+}
+.analysis li:hover {
+    background-color: lightgray;
+    color: white;
+}
+.coach-pop {
+    position: fixed;
+    z-index: 99;
+    width: 80%;
+    height: 40%;
+    left:50%;
+    transform: translateX(-50%);
+    top: -40%;
+    transition: 0.5s ease;
+    display: grid;
+    grid-template-rows: auto auto;
+    visibility: hidden;
+}
+.coach {
+    border-radius: var(--corners);
+    box-shadow: var(--shadow);
+}
+.the-coach {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    margin: 1em;
+    background-color: var(--color-font);;
+    justify-self: center;
+    display: grid;
+}
+.the-coach img {
+    width: 65%;
+    justify-self: center;
+    align-self: center;
+}
+.coach-pop.active {
+    top: 2em;
+    visibility: visible;
+}
+.coach-pop.active .coach {
+    box-shadow: var(--shadow-large);
+}
+
+#closeCoach {
+    justify-self: right;
+    cursor: pointer;
+}
+#closeCoach:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 48em) {
+    .coach-pop {
+        width: 60%;
+    }
+    .coach-pop.active {
+        top: 10em;
+    }
+}

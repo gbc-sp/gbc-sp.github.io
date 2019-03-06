@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Skillpod | Skills</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
+  <link rel="stylesheet" href="css/skillpod-layouts.css">
+  <link rel="stylesheet" href="css/dashNew.css">
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- No touching! -->
+  <nav class="toolbar">
+    <ul class="tools">
+      <li class="tool current"><a href="dashboard.html">skills</a><div class="tool-selected"></div></li>
+      <li class="tool"><a href="portfolio.html">portfolio</a><div class="tool-selected"></div></li>
+      <li></li>
+      <li class="tool"><a href="module-start.html">continue</a><div class="tool-selected"></div></li>
+    </ul>
+  </nav>
+  <!-- No touching! -->
+  
+  <div class="button-sticky">
+    <a href="https://plp.skillpod.ca" class="button">
+      Find Out How You Learn Best
+    </a>
+    <a href="help.html" class="button">
+        Get Help
+    </a>
+  </div>
+
+  <main class="layout dashboard">
+
+
+    <div class="tile blank shrink-vertical tight-padding no-bottom-padding">
+      <img class="logo-img logo-2" src="img/skillpod-logo-2.svg">
+      <!-- <h1>Welcome Back.</h1> -->
+      <p>Good morning Sherry, here’s your current Skill progress. You can look at past skills completed, or explore the next skill in your skill path.</p>
+      <h1>Your Skills</h1>
+      <h2>Skill Path | <span class="lighten">The skills that will help you meet your goal.</span></h2>
+    </div>
+
+    <div class="scrollable-row-double invert">
+
+      <div class="timeline blank center"><span>&#10004;</span><div class="time-line"></div></div>
+      <div class="timeline blank center"><span>2</span><div class="time-line"></div></div>
+      <div class="timeline blank center"><span>3</span><div class="time-line"></div></div>
+      <div class="timeline blank center"><span>4</span><div class="time-line"></div></div>
+      <div class="timeline blank center"><span>5</span><div class="time-line"></div></div>
+      <div class="timeline blank center"><span>6</span><div class="time-line"></div></div>
+      <div class="timeline blank center"><span>7</span><div class="time-line"></div></div>
+
+      <div id="selfworkModule" class="tile module two-column-grid selfwork complete">
+        <div class="module-done"><img class="checkmark" src="img/checkmark.svg"></div>
+        <div>
+          <h4 class="small-margin-bottom">Skill</h4>
+          <h1>Self Work</h1>
+        </div>
+        <img src="img/selfWork.svg">
+        <div class="selected-bar"></div>
+      </div>
+      <div id="designInnovationModule" class="tile module two-column-grid designInnovation complete">
+          <div class="module-done"><img class="checkmark" src="img/checkmark.svg"></div>
+          <div>
+            <h4 class="small-margin-bottom">Skill</h4>
+            <h1>Design & Innovation</h1>
+          </div>
+          <img src="img/designInnovation.svg">
+          <div class="selected-bar"></div>
+        </div>
+      <div id="smarterLearningModule" class="tile module two-column-grid smarterLearning">
+          <div>
+            <h4 class="small-margin-bottom">Skill</h4>
+            <h1>Smarter Learning</h1>
+          </div>
+          <img src="img/smarterLearning.svg">
+          <div class="selected-bar selected-bar-active"></div>
+        </div>
+      <div data-id="4" class="tile module two-column-grid disabled infoManagement">
+        <div class="module-done"><img src="img/locked.svg"></div>
+        <div>
+          <h4 class="small-margin-bottom">Skill</h4>
+          <h1>Information Management</h1>
+        </div>
+        <img src="img/infoManagement.svg">
+        <div class="selected-bar"></div>
+      </div>
+      <div data-id="5" class="tile module two-column-grid disabled strategicThinking">
+        <div class="module-done"><img src="img/locked.svg"></div>
+        <div>
+          <h4 class="small-margin-bottom">Skill</h4>
+          <h1>Strategic Thinking</h1>
+        </div>
+        <img src="img/strategicThinking.svg">
+        <div class="selected-bar"></div>
+      </div>
+      <div data-id="1" class="tile module two-column-grid disabled teamwork">
+        <div class="module-done"><img src="img/locked.svg"></div>
+        <div>
+          <h4 class="small-margin-bottom">Skill</h4>
+          <h1>Teamwork</h1>
+        </div>
+        <img src="img/teamwork.svg">
+        <div class="selected-bar"></div>
+      </div>
+      <div data-id="2" class="tile module two-column-grid networking disabled">
+          <div class="module-done"><img src="img/locked.svg"></div>
+          <div>
+            <h4 class="small-margin-bottom">Skill</h4>
+            <h1>Communication & Networking</h1>
+          </div>
+          <img src="img/communication.svg">
+          <div class="selected-bar"></div>
+        </div>
+    </div>
+
+  </main>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script></body>
+</html>

@@ -1,0 +1,33 @@
+/* https://www.freeformatter.com/html-escape.html#ad-output */
+
+pre, output {
+  display: block;
+  font: 1em/1.4 courier, monospace;
+  padding: 1em;
+  border-radius: var(--corners);
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  border: var(--line) solid #e6e6eb;
+  overflow-x:scroll;
+  margin: 1em 0;
+}
+
+code {
+  background-color: #e6e6eb;
+  font: 1em/1.4 courier, monospace;
+  padding: 0 0.25em;
+}
+
+.line-under {
+  border-bottom: 1px solid #aaa;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 48em) {
+  body {
+    font-size: 1.25em;
+  }
+  pre, output {
+    font-size: 0.875em;
+  }
+}

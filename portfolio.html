@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <title>Skillpod | Portfolio</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
+  <link rel="stylesheet" href="css/skillpod-layouts.css">
+</head>
+<body id="body">
+  <!-- No touching! -->
+  <nav class="toolbar">
+    <ul class="tools">
+      <li class="tool"><a href="dashboard.html">skills</a><div class="tool-selected"></div></li>
+      <li class="tool current"><a href="portfolio.html">portfolio</a><div class="tool-selected"></div></li>
+      <li></li>
+      <li class="tool"><a href="module-start.html">continue</a><div class="tool-selected"></div></li>
+    </ul>
+  </nav>
+  <!-- No touching! -->
+
+  <div id="portfolioPop" class="pop-up">
+    <div class="tile">
+      <div id="anotherClosePop" class="close-pop-up"><span class="lighten">x</span></div>
+      <div class="bio-grid">
+        <img src="img/infoManagement.svg">
+        <div>
+          <h3 class="txt-impact">Information Management</h3>
+          <h1>Your Portfolio Piece</h1>
+        </div>
+      </div>
+      <p>Information Management is crucial for me as a recent graduate looking for work. While talking to a prospective employer, she told me that she found a link to a number of YouTube videos that I had created when I was younger. This was not the professional image that I hoped to share. As a result, I have carefully searched and changed privacy settings on my social media to make sure that I have managed my personal image. I know that care and attention to privacy is important for me and for those around me and also will reflect on how I care about the company and colleagues where I work.</p>
+    </div>
+  </div>
+
+  <main class="layout">
+    <!-- Here is the layout, complete the content here -->
+    <div class="tile blank">
+      <h1>Skillpod Portfolio</h1>
+      <h3>A collection about you.</h3>
+      <a href="portfolio-edit.html" class="button"><span>Edit Information</span></a>
+    </div>
+
+    <div class="tile">
+      <div class="bio-grid">
+        <div class="bio-image">
+          <img src="img/me.jpg" alt="my profile picture">
+        </div>
+        <h1>Aaron DeRoche</h1>
+        <div class="bio-span">
+          <h2>Bio</h2>
+          <p>This is all about me! I'm a person that uses Skillpod, and I love it!</p>
+        </div>
+        <div class="bio-span">
+          <h2>Contact</h2>
+          <p>abc@def.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tile blank no-bottom-padding">
+      <h2>Portfolio Pieces</h2>
+    </div>
+
+    <div class="dynamic-content-panel two-column-grid">
+      <ul class="vertical-stack scrollable-row invert">
+        <li id="examplePP" data-id="0" class="tile module selected two-column-grid selfwork">
+          <div class="put-after">
+            <h4 class="small-margin-bottom">Module</h4>
+            <h3>Self Work</h3>
+          </div>
+          <img src="img/selfWork.svg">
+          <div class="selected-bar"></div>
+        </li>
+        <li id="designInnovation" data-id="3" class="tile module two-column-grid designInnovation">
+          <div class="put-after">
+            <h4 class="small-margin-bottom">Module</h4>
+            <h3>Design & Innovation</h3>
+          </div>
+          <img src="img/designInnovation.svg">
+          <div class="selected-bar"></div>
+        </li>
+        <li id="networking" data-id="2" class="tile module two-column-grid networking">
+          <div class="put-after">
+            <h4 class="small-margin-bottom">Module</h4>
+            <h3>Communication & Networking</h3>
+          </div>
+          <img src="img/communication.svg">
+          <div class="selected-bar"></div>
+        </li>
+        <li id="infoManagement" data-id="4" class="tile module two-column-grid infoManagement">
+          <div class="put-after">
+            <h4 class="small-margin-bottom">Module</h4>
+            <h3>Information Management</h3>
+          </div>
+          <img src="img/infoManagement.svg">
+          <div class="selected-bar"></div>
+        </li>
+
+      </ul>
+      <div class="tile">
+        <h1>Portfolio Piece</h1>
+        <p>Information Management is crucial for me as a recent graduate looking for work. While talking to a prospective employer, she told me that she found a link to a number of YouTube videos that I had created when I was younger. This was not the professional image that I hoped to share. As a result, I have carefully searched and changed privacy settings on my social media to make sure that I have managed my personal image. I know that care and attention to privacy is important for me and for those around me and also will reflect on how I care about the company and colleagues where I work.</p>
+      </div>
+    </div>
+
+    <div class="tile">
+      <h1>About Me</h1>
+        <h2>My Strengths</h2>
+        <h3>Leadership</h3>
+        <h3>Resillance</h3>
+        <h3>Consequences</h3>
+        <h2>My Goals</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>What I can offer a company is</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+  </main>
+  <script src="js/portfolio.js"></script>
+<script src="js/auth.js"></script></body>
+</html>
